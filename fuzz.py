@@ -612,6 +612,7 @@ def call_generate(yaml_path, args, output_path):
             "csv_output": False,
             "log_time": False,
             "spoiler_only": False,
+            "allow_quantity": True,
         }
     )
     for hook in MP_HOOKS:
@@ -1152,4 +1153,3 @@ if __name__ == "__main__":
             os._exit((FAILURE + TIMEOUTS) != 0)
 
         os._exit(2)
-
